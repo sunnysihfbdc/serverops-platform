@@ -1,0 +1,33 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Kubernetes local/generated files
+*.secret.yaml
+
+# Logs
+*.log
+logs/
+
+# OS/editor
+.DS_Store
+*.swp
+*.swo
+
+# Build/cache
+node_modules/
+vendor/
+__pycache__/
+
+# Kubernetes secrets
+k8s/mysql-secret.yaml
+
+# Docker image archives
+*.tar

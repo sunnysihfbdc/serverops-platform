@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: serverops
+  namespace: serverops
+
+spec:
+
+  selector:
+    app: serverops
+
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+      protocol: TCP
+
+  type: NodePort
